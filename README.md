@@ -4,7 +4,7 @@
 Its a small Navigationbar which adds quality of life features.
 
 ##  How to install
-1. Decide wether you want a desktopclient or a browserversion
+1. Decide wether you want a desktopclient or the browserversion
 2. Download files
 
 |   type  |            Requirement            |            Link            |
