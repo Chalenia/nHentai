@@ -14,7 +14,7 @@ A nHentai Client which aims to improve the overall userexperience.
 ##  How to install
 1. Decide whether you want a desktopclient or the browserversion
 
-|   type  |            Requirement            |            Link            |
+|   Type  |            Requirement            |            Link            |
 | :-----: | :-----------------------------: | :-----------------------------: |
 | Client | --- |    [latest release](https://github.com/Knuspie/nHentai/releases/latest)    |
 |  Userscript  | [Tampermonkey](https://www.tampermonkey.net/) |     [install](https://github.com/Knuspie/nHentai/raw/main/userscript/nHentai%2B%2B.user.js)     |
