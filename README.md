@@ -9,7 +9,7 @@ A nHentai Client which aims to improve the overall userexperience.
 - Free download feature (Client only)
 - Easy copie url button
 - Easy code viewer/changer
-- Autoupdater
+- Autoupdater (Soon)
 
 ##  How to install
 1. Decide whether you want a desktopclient or the browserversion
