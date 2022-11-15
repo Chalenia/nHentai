@@ -9,7 +9,7 @@ A nHentai Client which aims to improve the overall userexperience.
 - Free download feature (Client only)
 - Easy copie url button
 - Easy code viewer/changer
-- Icon easter egg 🥚
+- Autoupdater
 
 ##  How to install
 1. Decide wether you want a desktopclient or the browserversion
@@ -17,7 +17,7 @@ A nHentai Client which aims to improve the overall userexperience.
 |   type  |            Requirement            |            Link            |
 | :-----: | :-----------------------------: | :-----------------------------: |
 | Client | --- |    [latest release](https://github.com/Knuspie/nHentai/releases/latest)    |
-|  Userscript  | [Tampermonkey](https://www.tampermonkey.net/) |     [install/update link](https://github.com/Knuspie)     |
+|  Userscript  | [Tampermonkey](https://www.tampermonkey.net/) |     [install](https://github.com/Knuspie/nHentai/raw/main/userscript/nHentai%2B%2B.user.js)     |
 
 2. - Download and run the already installed exe from the portable version
    - Download and run the setup.exe
