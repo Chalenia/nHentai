@@ -1,4 +1,4 @@
-# nHentai++
+# <img src="./build/icon.ico" style="height:1em"> nHentai++
 
 ## Whats ++?
 Its a small Navigationbar which adds quality of life features.
