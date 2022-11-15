@@ -1,0 +1,31 @@
+{
+  "name": "nhentai",
+  "version": "1.0.0",
+  "description": "nHentai Client which aims to improve the overall userexperience",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Knuspie",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^21.2.3",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "@cliqz/adblocker-electron": "^1.25.1",
+    "cross-fetch": "^3.1.5",
+    "electron-store": "^8.1.0",
+    "jszip": "^2.6.1",
+    "request": "^2.88.2"
+  },
+  "build": {
+    "appId": "knuspie.nh",
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    }
+  }
+}
