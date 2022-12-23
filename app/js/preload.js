@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded',async () => {
   //if(window.location.href.includes('https://nhentai.to/g/'+code+"/")) ipcRenderer.send("size",660,970);
   //else ipcRenderer.send("size",1200,780);
 
-  if(window.location.href.includes('https://nhentai.to/g/'+code+"/")) ipcRenderer.send("size",2.9,1.05);
+  if(window.location.href.includes('https://nhentai.net/g/'+code+"/")) ipcRenderer.send("size",2.9,1.05);
   else ipcRenderer.send("size",1.6,1.3);
 
   //injections
@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded',async () => {
     var page = JSON.parse(await ipcRenderer.invoke("getSetting","page"));
   }
   if(document.title == "Not Found") {
-      window.open("https://nhentai.to/","_self");
+      window.open("https://nhentai.net/","_self");
   }
   if(window.location.href.includes("/g/")) document.getElementById("input").value = code;
   document.getElementById("popup").style.display = "none"
@@ -74,7 +74,7 @@ function startDow(){
 }
 function DowButton(visible){
     if(visible == true) {
-        if(window.location.href == "https://nhentai.to/g/"+code) {
+        if(window.location.href == "https://nhentai.net/g/"+code) {
             createDowButton();
 
             if (typeof(document.getElementById("dowButton")) != "undefined" && document.getElementById("dowButton") != null) {
@@ -111,7 +111,7 @@ const ImagetoDataURL = url => fetch(url)
                           reader.readAsDataURL(blob)
                       }))
 function createDowButton(){
-    if(window.location.href == "https://nhentai.to/g/"+code) {
+    if(window.location.href == "https://nhentai.net/g/"+code) {
         document.querySelector(".btn.btn-secondary.btn-disabled.tooltip").style.display = "none";
         const dowButton = document.createElement("a");
         dowButton.setAttribute("class", "btn-secondary");
@@ -131,7 +131,7 @@ function createDowButton(){
 function removeDowButton(){
     var dowButton = document.getElementById("dowButton");
     if (typeof(dowButton) != "undefined" && dowButton != null) {
-        if(window.location.href == "https://nhentai.to/g/"+code) {
+        if(window.location.href == "https://nhentai.net/g/"+code) {
             document.querySelector(".btn.btn-secondary.btn-disabled.tooltip").style.display = "inline-block";
             document.querySelector(".buttons").removeChild(dowButton);
         }
@@ -149,7 +149,7 @@ function startFav(){
     }
 }
 function addComic(pageUrl,pagePrev,pageTitleEn){
-    if(window.location.href == "https://nhentai.to/") {
+    if(window.location.href == "https://nhentai.net/") {
         const comicContainer = document.createElement("div");
         comicContainer.setAttribute("class", "gallery");
         comicContainer.classList.add("display");
@@ -186,7 +186,7 @@ function toggleHeart() {
     }
 }
 function FavButtonSecond(visible){
-    if(visible == true && window.location.href == "https://nhentai.to/g/"+code) {
+    if(visible == true && window.location.href == "https://nhentai.net/g/"+code) {
         
             createFavButton();
 
@@ -221,13 +221,13 @@ function FavButtonSecond(visible){
                 }
             }
     }   
-    if(visible == false && window.location.href == "https://nhentai.to/g/"+code) {
+    if(visible == false && window.location.href == "https://nhentai.net/g/"+code) {
         removeFavButton();
     }
 }
 function removeFavButton(){
     var favButton = document.getElementById("favButton");
-    if (typeof(favButton) != "undefined" && favButton != null && window.location.href == "https://nhentai.to/g/"+code) {
+    if (typeof(favButton) != "undefined" && favButton != null && window.location.href == "https://nhentai.net/g/"+code) {
         
             document.querySelector(".btn-primary.btn-disabled.tooltip").style.display = "inline-block";
             document.querySelector(".buttons").removeChild(favButton);
@@ -235,7 +235,7 @@ function removeFavButton(){
     }
 }
 function createFavButton(){
-    if(window.location.href == "https://nhentai.to/g/"+code) {
+    if(window.location.href == "https://nhentai.net/g/"+code) {
         document.querySelector(".btn-primary.btn-disabled.tooltip").style.display = "none";
     const favButton = document.createElement("a");
     favButton.setAttribute("class", "btn-primary");
@@ -253,7 +253,7 @@ function createFavButton(){
     }
 }
 function FavButtonMain(visible){
-    if(visible == true && window.location.href == "https://nhentai.to/") {
+    if(visible == true && window.location.href == "https://nhentai.net/") {
         
             const removeGallery = document.createElement("style");
             document.body.appendChild(removeGallery);
@@ -288,7 +288,7 @@ function FavButtonMain(visible){
             }, 900);
         
     }
-    if(visible == false && window.location.href == "https://nhentai.to/") {
+    if(visible == false && window.location.href == "https://nhentai.net/") {
         let gallery = document.getElementById("removeGallery");
         if (gallery) document.body.removeChild(gallery);
         let item = document.querySelectorAll(".display");
@@ -325,15 +325,15 @@ function blockAds(){
 }
 function searchPage(){
     var value = document.getElementById("input").value;
-    window.open("https://nhentai.to/g/"+value,"_self");
+    window.open("https://nhentai.net/g/"+value,"_self");
 }
 function randomPage(){
     var value = Math.floor(Math.random() * 999999);
-    window.open("https://nhentai.to/g/"+value,"_self");
+    window.open("https://nhentai.net/g/"+value,"_self");
 }
 function cleanPage(){
     document.getElementById("input").value = "";
-    window.open("https://nhentai.to/","_self");
+    window.open("https://nhentai.net/","_self");
 }
 function copyUrl(){
     const textarea = document.createElement("textarea");
