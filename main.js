@@ -28,7 +28,7 @@ const createWindow = async () => {
   if (settings.get("blockAds") == true) blocker.enableBlockingInSession(win.webContents.session);
 
   //win.webContents.openDevTools()
-  win.loadURL("https://nhentai.to/")
+  win.loadURL("https://nhentai.net/")
   win.removeMenu()
   win.center()
 
